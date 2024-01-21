@@ -16,25 +16,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>Hello World - 酱鹅Ethan</title>
+  <title>开始 - 酱鹅Ethan</title>
 
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="折腾了两天，终于搞好了自己的博客。期间也评估过各种方案，比如一些三方的博客系统，但综合权衡了一下，最终还是决定采用Hexo+GithubPage的形式搭建自己的博客系统。记录一下搭建过程中的一些问题和处理方法。 安装Hexo，配置远程发布到github具体操作参考使用Hexo从0到1搭建个人博客详细教程 💡 注意npm安装镜像源地址的修改，避免安装文件卡住的问题。 选择了stellar主题感觉">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://blog.weeta.cn/2024/01/20/hello-world/index.html">
+<meta property="og:title" content="开始">
+<meta property="og:url" content="https://blog.weeta.cn/2024/01/21/%E5%BC%80%E5%A7%8B/index.html">
 <meta property="og:site_name" content="酱鹅Ethan">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="折腾了两天，终于搞好了自己的博客。期间也评估过各种方案，比如一些三方的博客系统，但综合权衡了一下，最终还是决定采用Hexo+GithubPage的形式搭建自己的博客系统。记录一下搭建过程中的一些问题和处理方法。 安装Hexo，配置远程发布到github具体操作参考使用Hexo从0到1搭建个人博客详细教程 💡 注意npm安装镜像源地址的修改，避免安装文件卡住的问题。 选择了stellar主题感觉">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-20T11:16:41.126Z">
-<meta property="article:modified_time" content="2024-01-21T11:25:36.343Z">
+<meta property="og:image" content="http://jh-pic-bed.oss-cn-hangzhou.aliyuncs.com/img/image-20240121231351025.png">
+<meta property="article:published_time" content="2024-01-21T14:11:10.000Z">
+<meta property="article:modified_time" content="2024-01-21T15:14:10.455Z">
 <meta property="article:author" content="Ethan">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="经管">
 <meta property="article:tag" content="感悟">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://jh-pic-bed.oss-cn-hangzhou.aliyuncs.com/img/image-20240121231351025.png">
   
   
   
-  <meta name="keywords" content="感悟">
+  <meta name="keywords" content="技术,经管,感悟">
 
   <!-- feed -->
   
@@ -69,7 +73,6 @@
 </div>
 <div class="widgets">
 
-<widget class="widget-wrapper toc single" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol></div></div></widget>
 
 
 
@@ -77,7 +80,8 @@
 
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title active" href="/2024/01/20/hello-world/"><span class="title">Hello World</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a></div></widget>
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title active" href="/2024/01/21/%E5%BC%80%E5%A7%8B/"><span class="title">开始</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -87,22 +91,17 @@
 
 
 <div class="bread-nav fs12"><div class="left"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></div>
-<div id="post-meta"><span class="author">发布于：</span><span class="created"><time datetime="2024-01-20T11:16:41.126Z">2024-01-20</time></span><span class="updated">，更新于：<time datetime="2024-01-21T11:25:36.343Z">2024-01-21</time></span></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/">生活随记</a></div>
+<div id="post-meta"><span class="author">发布于：</span><span class="created"><time datetime="2024-01-21T14:11:10.000Z">2024-01-21</time></span><span class="updated">，更新于：<time datetime="2024-01-21T15:14:10.455Z">2024-01-21</time></span></div></div>
 </div>
-<article class="md-text content"><h1 class="article-title"><span>Hello World</span></h1><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<article class="md-text content"><h1 class="article-title"><span>开始</span></h1><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="http://jh-pic-bed.oss-cn-hangzhou.aliyuncs.com/img/image-20240121231351025.png" alt="image-20240121231351025"></p>
+<p>折腾了两天，终于搞好了自己的博客。期间也评估过各种方案，比如一些三方的博客系统，但综合权衡了一下，最终还是决定采用Hexo+GithubPage的形式搭建自己的博客系统。记录一下搭建过程中的一些问题和处理方法。</p>
+<p>安装Hexo，配置远程发布到github具体操作参考<a href="cloud.tencent.com/developer/article/2337246?areaId=106001">使用Hexo从0到1搭建个人博客详细教程</a> 💡 注意npm安装镜像源地址的修改，避免安装文件卡住的问题。</p>
+<p>选择了<a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/#start">stellar主题</a>感觉这个主题交互很不错，也可有很强大的扩展功能，在开始使用时，因为没有适配最新的Hexo，启动报错了，给开发者提了一个isuee，第二天就解决了，赞👍。还有很多好用的功能，等后面有时间了再慢慢了解。</p>
+<p>Hexo发布的博客内容为markdown形式，markdown编辑器使用了Typora，相关教程参考<a href="zhuanlan.zhihu.com/p/648915268">Typora安装文章</a>。</p>
+<p>为了解决图片上传问题，在Typora中使用了自定义图床，图床使用了阿里云oss，相关说明可以参考文章<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/138878534">Typora图床配置</a>。</p>
+<p>用了自定义的域名，关联上了Hexo的博客，在阿里云配置了域名之后，出现了404的问题。参考了 <a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000003043124">相关链接 </a>解决了这个问题。</p>
+<p>最后，奉上的新博客的地址 blog.weeta.cn，后续我会在这里记录我平时的技术问题、个人感悟、学习心得。希望能够坚持下去，输出有价值的内容，不断的成长！</p>
 
 <div class="article-footer fs14">
     <section id="license">
@@ -114,11 +113,13 @@
     <section id="share">
       <div class="header"><span>分享文章</span></div>
       <div class="body">
-        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.weeta.cn/2024/01/20/hello-world/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.weeta.cn/2024/01/20/hello-world/&title=Hello World - 酱鹅Ethan&summary=Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ..."><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=Hello World - 酱鹅Ethan&amp;body=https://blog.weeta.cn/2024/01/20/hello-world/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://blog.weeta.cn/2024/01/21/%E5%BC%80%E5%A7%8B/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://blog.weeta.cn/2024/01/21/%E5%BC%80%E5%A7%8B/&title=开始 - 酱鹅Ethan&summary=
+折腾了两天，终于搞好了自己的博客。期间也评估过各种方案，比如一些三方的博客系统，但综合权衡了一下，最终还是决定采用Hexo+GithubPage的形式搭建自己的博客系统。记录一下搭建过程中的一些问题和处理方法。
+安装Hexo，配置远..."><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=开始 - 酱鹅Ethan&amp;body=https://blog.weeta.cn/2024/01/21/%E5%BC%80%E5%A7%8B/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0">
-          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.weeta.cn/2024/01/20/hello-world/"/>
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://blog.weeta.cn/2024/01/21/%E5%BC%80%E5%A7%8B/"/>
         </div>
         
       </div>
@@ -127,7 +128,7 @@
 </article>
 
 
-
+<div class="related-wrap" id="related-posts"></div>
 
 
   <div class="related-wrap md-text" id="comments">
