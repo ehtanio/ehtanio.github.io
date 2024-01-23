@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>开始</title>
+    <link href="/2024/01/21/%E5%BC%80%E5%A7%8B/"/>
+    <url>/2024/01/21/%E5%BC%80%E5%A7%8B/</url>
+    
+    <content type="html"><![CDATA[<p>折腾了两天，终于搞好了自己的博客。期间也评估过各种方案，比如一些三方的博客系统，但综合权衡了一下，最终还是决定采用Hexo+GithubPage的形式搭建自己的博客系统。记录一下搭建过程中的一些问题和处理方法。</p><p>安装Hexo，配置远程发布到github具体操作参考<a href="https://cloud.tencent.com/developer/article/2337246?areaId=106001">使用Hexo从0到1搭建个人博客详细教程</a> 💡 注意npm安装镜像源地址的修改，避免安装文件卡住的问题。</p><p>选来选去，最终选择了<a href="https://hexo.fluid-dev.com/">fluid主题</a>，感觉这个主题很简洁，适合做博客。</p><p>Hexo发布的博客内容为markdown形式，markdown编辑器使用了Typora，相关教程参考<a href="zhuanlan.zhihu.com/p/648915268">Typora安装文章</a>。</p><p>为了解决图片上传问题，在Typora中使用了自定义图床，图床使用了阿里云oss，相关说明可以参考文章<a href="https://zhuanlan.zhihu.com/p/138878534">Typora图床配置</a>。</p><p>用了自定义的域名，关联上了Hexo的博客，在阿里云配置了域名之后，出现了404的问题。参考了 <a href="https://segmentfault.com/q/1010000003043124">相关链接 </a>解决了这个问题。</p><p>最后，奉上的新博客的地址 blog.weeta.cn，后续我会在这里记录我平时的技术问题、个人感悟、学习心得。希望能够坚持下去，输出有价值的内容，不断的成长！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活随记</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
